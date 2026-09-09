@@ -19,7 +19,8 @@ file(CREATE_LINK
 
 pico_sdk_init()
 
-add_executable(pico main.cpp)
+add_executable(pico main.cpp flash.cpp msc_callbacks.cpp usb_descriptor.cpp)
+
 target_include_directories(pico PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}
   ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source

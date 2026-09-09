@@ -21,3 +21,5 @@ CMakeUserPresets.json
 # clangd index
 .cache/
 build/
+/Session.vim
+/Session_arena.json
